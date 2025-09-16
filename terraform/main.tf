@@ -40,6 +40,7 @@ resource "aws_lambda_function" "api" {
   environment {
     variables = {
       TABLE_NAME = aws_dynamodb_table.contacts.name
+      ENDPOINT_URL = "http://ip10-0-60-5-d34h05vtq0k1c7corng0-8080.direct.lab-boris.fr" 
     }
   }
 }
